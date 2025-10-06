@@ -3,7 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <section class="profile-image">
+        <img
+          src="./assets/images/profile-image.png"
+          alt="Profile image"
+          width="124"
+          height="124"
+        />
+      </section>
+      <section class="introduction tile">
+        <p class="introduction__greeting">Hello 👋🏻 I’m</p>
+        <div class="introduction__info">
+          <h1 class="introduction__name">Karthik SR</h1>
+          <div class="introduction__profession">UX/UI Designer</div>
+        </div>
+      </section>
+      <section class="languages tile">
+        <h2 class="sub-heading languages__title">Languages</h2>
+        <div class="languages__list">
+          <ul class="languages__items">
+            <li class="languages__item">English</li>
+            <li class="languages__item">Malayalam</li>
+            <li class="languages__item">Hindi</li>
+          </ul>
+          <div class="languages__levels">
+            <div class="languages__level english-language-level"></div>
+            <div class="languages__level malayalam-language-level"></div>
+            <div class="languages__level hindi-language-level"></div>
+          </div>
+        </div>
+      </section>
+      <section class="experience tile">
+        <h2 class="sub-heading experience__title">Experience</h2>
+        <ul class="experience__items">
+          <li class="experience__item job job_recent">
+            <div class="job__state">
+              <p class="job__date">Jun. 2023 - Present</p>
+              <p class="job__most-recent">most recent</p>
+            </div>
+            <div class="job__info">
+              <div class="job__mission">
+                <p class="job__profession">Marketing Manager</p>
+                <p class="job__place">
+                  Pankayam <span class="job__status">Full-time</span>
+                </p>
+              </div>
+              <ul class="job__tasks">
+                <li class="job__task">
+                  Strategy development and planning of campaigns that promote
+                  the business and generate genuine traffic
+                </li>
+                <li class="job__task">
+                  SEO Content Creation for Blogs, Website, Social media
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="experience__item job job_recent">
+            <div class="job__state">
+              <p class="job__date">2017 - Present</p>
+            </div>
+            <div class="job__info">
+              <div class="job__mission">
+                <p class="job__profession">Graphic / Web designer</p>
+                <p class="job__place">Freelance</p>
+              </div>
+              <ul class="job__tasks">
+                <li class="job__task">
+                  Development of internal projects from scratch, product design
+                  of brands
+                </li>
+                <li class="job__task">Landing page, webapps and hybrid apps</li>
+                <li class="job__task">
+                  Coordinating with outside agencies, art services, web
+                  designer, marketing, printers, and colleagues as necessary.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="experience__item job job_recent">
+            <div class="job__state">
+              <p class="job__date">Sep. 2021 - Jun. 2023</p>
+            </div>
+            <div class="job__info">
+              <div class="job__mission">
+                <p class="job__profession">Legal Assistant</p>
+                <p class="job__place">
+                  Law Firm <span class="job__status">Intern</span>
+                </p>
+              </div>
+              <ul class="job__tasks">
+                <li class="job__task">
+                  Provide administrative support to lawyer and enhance office
+                  effectiveness
+                </li>
+                <li class="job__task">
+                  Handle communication with clients, witnesses etc.
+                </li>
+                <li class="job__task">
+                  Repare case briefs and summarize depositions, interrogatories
+                  and testimony
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>

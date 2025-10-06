@@ -1,0 +1,116 @@
+.container {
+  /* ширину, флексы */
+}
+
+.profile-image {
+}
+
+.profile-image img {
+}
+
+.tile {
+  /* паддинги, бордер-радиус, цвет задника */
+}
+
+.introduction {
+}
+
+.introduction__greeting {
+}
+
+.introduction__info {
+}
+
+.introduction__name {
+}
+
+.introduction__profession {
+}
+
+.languages {
+}
+
+.sub-heading {
+}
+
+.languages__title {
+}
+
+.languages__list {
+}
+
+.languages__items {
+}
+
+.languages__item {
+}
+
+.languages__levels {
+}
+
+.languages__level {
+}
+
+.english-language-level,
+.malayalam-language-level {
+}
+
+.hindi-language-level {
+}
+
+.experience {
+}
+
+.experience__title {
+}
+
+.experience__items {
+}
+
+.experience__item {
+}
+
+.job {
+}
+
+.job_recent {
+}
+
+.job_recent .job__most-recent {
+  /* видимый */
+}
+
+.job__state {
+}
+
+.job__date {
+}
+
+.job__most-recent {
+  /* дизеблить если не recent */
+}
+
+.job__info {
+}
+
+.job__mission {
+}
+
+.job__profession {
+}
+
+.job__place {
+}
+
+.job__status {
+}
+
+.job__status::before {
+  /* сам элемент, отступы */
+}
+
+.job__tasks {
+}
+
+.job__task {
+}
