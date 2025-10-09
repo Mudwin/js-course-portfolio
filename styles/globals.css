@@ -1,12 +1,12 @@
 @import url("fonts.css");
 @import url("variables.css");
+@import url("normalize.css");
 
 body {
   font-family: var(--font-family);
   font-size: 8px; /* возможная редактура */
   font-weight: 400;
   line-height: 150%;
-  margin: 0;
 }
 
 h1 {
