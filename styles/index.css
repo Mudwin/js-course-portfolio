@@ -4,18 +4,18 @@
   border: 1px solid red;
   max-width: 555px; /* возможная редактура */
   margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 124px 124px 124px 124px;
+  grid-template-rows: 124px 376px 177px 92px;
   gap: 20px;
-
-  /* display: flex; */
-  /* flex-wrap: wrap; */
 }
 
 .profile-image {
   width: 124px;
   height: 124px;
+
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .profile-image img {
@@ -35,6 +35,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 46px;
+
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .introduction__greeting {
@@ -52,10 +55,13 @@
 }
 
 .languages {
+  grid-column: 3 / span 2;
+  grid-row: 1;
 }
 
 .sub-heading {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  line-height: 150%;
 }
 
 .languages__title {
@@ -63,9 +69,11 @@
 
 .languages__list {
   display: flex;
+  /* border: 1px solid red; */
 }
 
 .languages__items {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -79,6 +87,7 @@
 }
 
 .languages__levels {
+  /* border: 1px solid blue; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,6 +95,7 @@
 }
 
 .languages__level {
+  /* border: 1px solid purple; */
   background-color: var(--color-light-green);
   border-radius: 3px;
   height: 11px;
@@ -97,6 +107,8 @@
 }
 
 .experience {
+  grid-column: 1 / span 3;
+  grid-row: 2;
 }
 
 .experience__title {
@@ -211,6 +223,12 @@
 
 .tools {
   padding-bottom: 3px;
+
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.tools__title {
 }
 
 .tools__items-container {
@@ -263,10 +281,14 @@
 
 .education {
   padding-left: 8px;
+
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
 }
 
 .education__courses {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -331,6 +353,11 @@
 } */
 
 .interests {
+  /* height: fit-content; */
+
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  border: 1px solid green;
 }
 
 .interests__title {
@@ -357,6 +384,10 @@
 .contact {
   background-color: var(--color-black);
   color: var(--color-white);
+  /* height: fit-content; */
+
+  grid-column: 3 / span 2;
+  grid-row: 4;
 }
 
 .contact__title {
