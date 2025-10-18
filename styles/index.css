@@ -1,8 +1,7 @@
 @import url("globals.css");
 
 .container {
-  border: 1px solid red;
-  max-width: 555px; /* возможная редактура */
+  max-width: 555px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 124px 124px 124px 124px;
@@ -13,7 +12,6 @@
 .profile-image {
   width: 124px;
   height: 124px;
-
   grid-column: 1;
   grid-row: 1;
 }
@@ -25,7 +23,6 @@
 }
 
 .tile {
-  /* паддинги, бордер-радиус, цвет задника */
   background-color: var(--color-gray);
   border-radius: var(--tile-border-radius);
   padding: var(--tile-padding);
@@ -35,15 +32,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 46px;
-
   grid-column: 2;
   grid-row: 1;
-}
-
-.introduction__greeting {
-}
-
-.introduction__info {
 }
 
 .introduction__name {
@@ -64,16 +54,11 @@
   line-height: 150%;
 }
 
-.languages__title {
-}
-
 .languages__list {
   display: flex;
-  /* border: 1px solid red; */
 }
 
 .languages__items {
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -87,7 +72,6 @@
 }
 
 .languages__levels {
-  /* border: 1px solid blue; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -95,7 +79,6 @@
 }
 
 .languages__level {
-  /* border: 1px solid purple; */
   background-color: var(--color-light-green);
   border-radius: 3px;
   height: 11px;
@@ -111,16 +94,10 @@
   grid-row: 2;
 }
 
-.experience__title {
-}
-
 .experience__items {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.experience__item {
 }
 
 .job {
@@ -164,9 +141,6 @@
   justify-content: space-between;
 }
 
-.job__date {
-}
-
 .job__most-recent {
   display: none;
 }
@@ -181,21 +155,15 @@
   align-self: flex-start;
 }
 
-.job__profession {
-}
-
 .job__place {
   color: var(--color-dark-gray-2);
-}
-
-.job__status {
 }
 
 .job__status::before {
   content: "|";
   display: inline-block;
   margin-inline: 6px;
-  font-size: 8px; /* возможная редактура */
+  font-size: 8px;
   color: var(--color-black);
 }
 
@@ -215,24 +183,19 @@
   flex-shrink: 0;
   border-radius: 50%;
   background-color: var(--color-black);
-  margin-right: 9px; /* возможная редактура */
+  margin-right: 9px;
   position: relative;
-  top: 4px; /* возможная редактура */
-  left: 4px; /* возможная редактура */
+  top: 4px;
+  left: 4px;
 }
 
 .tools {
-  padding-bottom: 3px;
-
   grid-column: 4;
   grid-row: 2;
-}
-
-.tools__title {
+  padding-bottom: 3px;
 }
 
 .tools__items-container {
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
 }
@@ -240,7 +203,6 @@
 .tools__items {
   display: inline-flex;
   flex-direction: column;
-  border: 1px solid green;
   gap: 12px;
 }
 
@@ -263,7 +225,6 @@
 }
 
 .tools__item-logos {
-  /* border: 1px solid red; */
   background-color: var(--color-white);
   border-radius: 6px;
   padding: 16px 6px;
@@ -275,15 +236,13 @@
 }
 
 .tools__item-logo {
-  border: 1px solid blue;
   justify-self: center;
 }
 
 .education {
-  padding-left: 8px;
-
   grid-column: 1 / span 2;
   grid-row: 3 / span 2;
+  padding-left: 8px;
 }
 
 .education__courses {
@@ -291,9 +250,6 @@
   flex-wrap: wrap;
   gap: 16px;
 }
-
-/* .education__course {
-} */
 
 .course {
   background-color: var(--color-white);
@@ -329,18 +285,6 @@
   display: inline-block;
 }
 
-/* .course__most-recent img {
-}
-
-.course__info {
-}
-
-.course__subject {
-}
-
-.course__hashtags {
-} */
-
 .course__hashtag {
   color: var(--color-dark-green);
 }
@@ -349,18 +293,9 @@
   color: var(--color-white);
 }
 
-/* .course__place {
-} */
-
 .interests {
-  /* height: fit-content; */
-
   grid-column: 3 / span 2;
   grid-row: 3;
-  border: 1px solid green;
-}
-
-.interests__title {
 }
 
 .interests__items {
@@ -384,16 +319,8 @@
 .contact {
   background-color: var(--color-black);
   color: var(--color-white);
-  /* height: fit-content; */
-
   grid-column: 3 / span 2;
   grid-row: 4;
-}
-
-.contact__title {
-}
-
-.contact__email {
 }
 
 .contact__email a {
