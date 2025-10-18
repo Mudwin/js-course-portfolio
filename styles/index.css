@@ -36,6 +36,17 @@
   grid-row: 1;
 }
 
+.introduction__greeting span {
+  display: inline-block;
+  transition-duration: var(--transition-duration);
+}
+
+.introduction:hover {
+  .introduction__greeting span {
+    transform: rotateZ(35deg);
+  }
+}
+
 .introduction__name {
   margin-bottom: 6px;
 }
@@ -104,6 +115,11 @@
   border-radius: 10px;
   padding: 8px;
   background-color: var(--color-white);
+  transition-duration: var(--transition-duration);
+}
+
+.job:hover {
+  box-shadow: var(--box-shadow);
 }
 
 .job_recent.job {
@@ -233,10 +249,20 @@
   grid-template-columns: repeat(2, auto);
   gap: 16px;
   justify-content: center;
+  transition-duration: var(--transition-duration);
+}
+
+.tools__item-logos:hover {
+  box-shadow: var(--box-shadow);
 }
 
 .tools__item-logo {
   justify-self: center;
+  transition-duration: var(--transition-duration);
+}
+
+.tools__item-logo:hover {
+  scale: 110%;
 }
 
 .education {
@@ -261,6 +287,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
+  transition-duration: var(--transition-duration);
+}
+
+.course:hover {
+  box-shadow: var(--box-shadow);
 }
 
 .course_recent {
@@ -309,6 +340,12 @@
   border-radius: 40px;
   padding: 4px 10px;
   width: fit-content;
+  transition-duration: var(--transition-duration);
+}
+
+.interests__item:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .interests__item span {
@@ -324,7 +361,12 @@
 }
 
 .contact__email a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 10px;
+  transition-duration: var(--transition-duration);
+}
+
+.contact__email a:hover {
+  color: var(--color-dark-white-2);
 }
